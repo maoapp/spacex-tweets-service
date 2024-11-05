@@ -3,11 +3,12 @@ import cors from 'cors';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
 import launchesRoutes from './routes/launchesRoutes';
+import tweetsRoutes from './routes/tweetsRoutes';
 
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 
 app.use(cors());
 app.use(express.json());
@@ -29,6 +30,7 @@ app.get('/health', (_req, res) => {
 });
 
 app.use('/api/launches', launchesRoutes);
+app.use('/api/tweets', tweetsRoutes);
 
 try {
   app.listen(PORT, () => {
