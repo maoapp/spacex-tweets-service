@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                    // Versión de JavaScript a la que se compilará el código
+    "module": "CommonJS",                  // Módulo para Node.js
+    "rootDir": "src",                      // Directorio de los archivos TypeScript
+    "outDir": "dist",                      // Directorio de salida para los archivos compilados
+    "strict": true,                        // Habilita todas las comprobaciones estrictas de TypeScript
+    "esModuleInterop": true,               // Permite la importación de módulos CommonJS y ES6
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true                   // Omite la comprobación de archivos de definición para acelerar la compilación
+  },
+  "include": ["src"],                      // Incluye todos los archivos dentro del directorio src
+  "exclude": ["node_modules"]              // Excluye el directorio node_modules
+}
