@@ -2,6 +2,7 @@ import express, { Request } from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
+import launchesRoutes from './routes/launchesRoutes';
 
 dotenv.config();
 
@@ -26,6 +27,8 @@ app.use(morgan(':custom'));
 app.get('/health', (_req, res) => {
   res.status(200).send('Ok')
 });
+
+app.use('/api/launches', launchesRoutes);
 
 try {
   app.listen(PORT, () => {
