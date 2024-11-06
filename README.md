@@ -15,13 +15,23 @@ For data fetching and API management, I used **Axios** to handle HTTP requests t
 The following tasks were completed in sequential order:
 
 1. **Project Setup**: Initialized project structure, configuration, and dependencies. (initial commit)
-2. [- Launches data service.](https://github.com/maoapp/spacex-tweets-service/pull/1):
+   
+3. [- Launches data service.](https://github.com/maoapp/spacex-tweets-service/pull/1):
    - Integrated SpaceX API to fetch upcoming and past launches.
-   - Defined routes for retrieving specific launch details (e.g., date, location, mission status).
-3. [- Twitter data service.](https://github.com/maoapp/spacex-tweets-service/pull/2):
+     
+4. [- Twitter data service.](https://github.com/maoapp/spacex-tweets-service/pull/2):
    - Integrated Twitter API to retrieve recent tweets about SpaceX and launches.
-   - Implemented caching to reduce requests to Twitter and avoid rate limits.
-
+  
+5. [- Launche details.](https://github.com/maoapp/spacex-tweets-service/pull/4):
+   - Integrated SpaceX API to fetch launche details
+   - Defined routes for retrieving specific launch details (e.g., date, location, mission status).
+  
+6. [- Twitter service cache implementation .](https://github.com/maoapp/spacex-tweets-service/pull/5):
+   - Integrated cache service to avoid the rate limit error responses
+  
+7. [- Unit testing.](https://github.com/maoapp/spacex-tweets-service/pull/6):
+   - Adding unit testing to services, routes , controllers and main
+  
 ## Branching Strategy
 
 For effective task management and code organization, the following branching strategy was employed:
