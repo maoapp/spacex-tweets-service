@@ -31,6 +31,10 @@ The following tasks were completed in sequential order:
   
 7. [- Unit testing.](https://github.com/maoapp/spacex-tweets-service/pull/6):
    - Adding unit testing to services, routes , controllers and main
+
+8. [- Restrict unknonw Domains](https://github.com/maoapp/spacex-tweets-service/pull/7):
+   - Only allow request from one domain
+   
   
 ## Branching Strategy
 
