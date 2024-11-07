@@ -1,5 +1,7 @@
 # SpaceX Launch Tracker Service
 
+https://spacex-tweets-service.onrender.com/health
+
 ## Project Description
 
 A microservice in Node.js that provides a secure and scalable backend for the space launch tracking application. This service allows users to query information about past and upcoming space launches using the public SpaceX API and to access recent tweets related to SpaceX or space launches through the Twitter API.
